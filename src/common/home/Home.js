@@ -7,10 +7,8 @@ render(){
 
     return(
         
-        <div>
-      
-       <Header />
-        </div>
+        
+      <div><Header /></div>
     )
 }
 }

@@ -1,0 +1,15 @@
+/*  grey Header   */
+.app-header {
+    background-color:grey;
+    height: 36px;
+    padding: 8px 32px 8px 16px;
+}
+/*  login button to float right  */
+ .login-button {
+    float: right;
+}
+/*  account circle icon having a padding on right   */
+.accountCircle-logo{
+   
+    padding-right: 6%;
+}

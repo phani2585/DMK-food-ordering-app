@@ -1,0 +1,17 @@
+ <header className="app-header">
+           
+                    <div className = "login-button">
+                        <Button variant="contained" color="default"><img src={accountCircle} className="accountCircle-logo" alt="accountCircle" />LOGIN</Button>
+                     </div>
+               
+            </header>
+
+
+.accountCircle-logo{
+   
+    padding-right: 6%;
+}
+.login-button{
+    padding: 1%;
+    vertical-align: center;
+}
