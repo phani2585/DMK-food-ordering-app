@@ -15,11 +15,18 @@
 .search-icon-container {
     position: 'relative';
     display: 'inline-block';
+    align-self: center;
 }
 
 .search-icon {
-    padding: 0 7px;
+    padding: 0 5px;
     align-self: center;
+}
+
+#search-text-input {
+    padding: 4px 4pm 4px 0px;
+    color: white;
+    font-size: 15px;
 }
 
 
