@@ -4,6 +4,10 @@ import Button from '@material-ui/core/Button';
 import accountCircle from '../../assets/icon/accountCircle.svg';
 import fastfood from '../../assets/icon/fastfood.svg';
 import { withStyles } from "@material-ui/core/styles";
+import Input from '@material-ui/core/Input';
+import TextField from '@material-ui/core/TextField';
+import IconButton from "@material-ui/core/IconButton";
+import InputAdornment from "@material-ui/core/InputAdornment";
 
 
 
@@ -15,13 +19,46 @@ const FastFoodIcon = (props) => (
 
 )
 
+const SearchIcon = (props) => (
+
+    <svg xmlns="http://www.w3.org/2000/svg" className={props.class} fill={props.fill} width="31" height="31" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+)
+
+// const useStyles = makeStyles(theme => ({
+   
+//     textField: {
+//       marginLeft: theme.spacing(1),
+//       marginRight: theme.spacing(1),
+//       width: 200,
+//     }
+   
+//   }));
+
+//   export default function TextFields() {
+//     const classes = useStyles();
+    
+  
+//     // const handleChange = name => event => {
+//     //   setValues({ ...values, [name]: event.target.value });
+//     };
 class Header extends Component {
     render() {
         return (
             //the account circle icon image has been inserted inside the button component
-            <header className="app-header">
+            <header className="app-header-container">
+                <div className = "fastfood-icon-container">
                 <FastFoodIcon fill = "white"/>
-                <div className="login-button">
+                </div>
+
+                
+            
+                <div className = "search-icon-container">
+                <SearchIcon   fill = "white" className="SearchIcon-logo" />
+                <TextField placeholder = "Search by Restaurant Name" />
+                </div>
+              
+
+                <div className="login-button-container">
                     <Button variant="contained" color="default">
                         <img src={accountCircle} className="accountCircle-logo" alt="accountCircle" />
                         Login
