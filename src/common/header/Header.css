@@ -1,0 +1,57 @@
+/*  grey Header   */
+
+.app-header-container {
+    background-color: grey;
+    height: 36px;
+    padding: 8px 32px 8px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fastfood-icon-container {
+    float: left;
+}
+
+.search-icon-container {
+    position: 'relative';
+    display: 'inline-block';
+    align-self: center;
+}
+
+.search-icon {
+    padding: 0 5px;
+    align-self: center;
+}
+
+#search-text-input {
+    padding: 4px 4pm 4px 0px;
+    color: white;
+    font-size: 15px;
+}
+
+
+/*  login button to float right  */
+
+.login-button-container {
+    float: right;
+}
+
+
+/*  account circle icon having a padding on right   */
+
+.accountCircle-logo {
+    padding-right: 6%;
+}
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    .app-header-container {
+        background-color: grey;
+        height: 100%;
+    }
+    .search-icon-container {
+        float: left;
+    }
+}
