@@ -48,14 +48,16 @@ class Header extends Component {
             header className = "app-header-container" >
 
             <
-            div className = "fastfood-icon-container" >
+            div className = "fastfood-icon-container"
+            id = "left" >
             <
             FastFoodIcon fill = "white" / >
             <
             /div>
 
             <
-            div className = "search-icon-container" >
+            div className = "search-icon-container"
+            id = "middle" >
 
             <
             TextField InputProps = {
@@ -82,7 +84,8 @@ class Header extends Component {
 
 
             <
-            div className = "login-button-container" >
+            div className = "login-button-container"
+            id = "right" >
             <
             Button variant = "contained"
             color = "default" >

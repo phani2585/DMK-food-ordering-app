@@ -65,3 +65,28 @@
               onChange={_.debounce((event, value) => this.handleSearch(value), 500)}
         />
 </div>
+
+
+
+
+/*
+
+#left {
+    float: left;
+    width: 20%;
+    /* The width is 20%, by default */
+}
+*/
+
+#middle {
+    padding: 20px;
+    float: left;
+    width: 60%;
+    /* The width is 60%, by default */
+}
+
+#right {
+    float: left;
+    width: 20%;
+    /* The width is 20%, by default */
+}

@@ -42,3 +42,16 @@
 .accountCircle-logo {
     padding-right: 6%;
 }
+
+@media (max-width:600px) {
+    header {
+        flex-direction: column;
+    }
+    .app-header-container {
+        background-color: grey;
+        height: 100%;
+    }
+    .search-icon-container {
+        float: left;
+    }
+}
